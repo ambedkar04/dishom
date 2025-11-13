@@ -1,0 +1,15 @@
+/* Force Start Time date and time inputs to appear on the same row */
+fieldset .field-start_time .datetime {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+fieldset .field-start_time .datetime input {
+  width: auto;
+  min-width: 140px;
+}
+
+/* Jazzmin may render with form-row containers; ensure no unintended line breaks */
+fieldset .field-start_time .datetime br { display: none; }
